@@ -2,6 +2,17 @@
 <html>
 <head>
 <meta charset="utf-8">
+<script type="text/javascript">   
+$.ajax({  
+url:"http://cloud.bmob.cn/640a53266a6c34ec/user",  
+dataType:'jsonp',  
+data:'',  
+ jsonp:'callback',  
+success:function(result) {  
+alert(result.results[0].totalPV);
+}      
+}); 
+</script>
 </head>
 <body>
 hello everybody!
